@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <link rel='stylesheet' href='/stylesheets/semantic.min.css' />
+</head>
+
+<body>
+    <h3 class="ui center aligned header">V-Figure预览</h3>
+    <div class="ui two column doubling grid">
+        <section class="column">
+            <div class="field ui segment">
+                <h3>请选择图表模块类型</h3>
+                <select class="ui fluid dropdown type">
+                    <option value="stdBar">标准柱状图</option>
+                    <option value="stripBar">标准条形图</option>
+                    <option value="polar">南丁格尔图</option>
+                    <option value="stdPolyLine">标准折线图</option>
+                    <option value="stdPie">标准饼图</option>
+                    <option value="stdRing">环状图</option>
+                </select>
+            </div>
+            <div class="ui form segment">
+                <label>当前模块默认的配置数据</label><a href="#" id="download">下载数据</a>
+                <iframe src="about://blank" name="inner" height="0" style="display:none;"></iframe>
+                <form class="" action="/upload" target="inner" enctype="multipart/form-data" method="post">
+                    <input type="file" name="modalType" id="">
+                    <input type="submit" class="ui submit button" value="上传">
+                </form>
+
+                <textarea name="name" rows="20" cols="40"></textarea>
+            </div>
+
+
+        </section>
+        <section class="column ui segment">
+            <label for="">实时预览</label>
+            <div id="canvas"></div>
+            <button id="refresh">刷新</button>
+        </section>
+
+    </div>
+
+
+    <script src="/javascripts/jquery.js"></script>
+    <script src="/javascripts/semantic.min.js"></script>
+    <script src="/javascripts/figure.js"></script>
+    <script src="/javascripts/app/preview.js"></script>
+</body>
+
+</html>

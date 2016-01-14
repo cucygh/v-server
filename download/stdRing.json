@@ -1,0 +1,71 @@
+{
+    "series": [{
+        "data": 10,
+        "style": {
+            "fill": "#1ba9ba",
+            "stroke": "#fff",
+            "r": 2
+        },
+        "legend": "测试案例"
+    }, {
+        "data": 40,
+        "style": {
+            "fill": "#f00",
+            "stroke": "#fff",
+            "r": 2
+        },
+        "legend": "二维码"
+    }, {
+        "data": 7,
+        "style": {
+            "fill": "#f45",
+            "stroke": "#fff",
+            "r": 2
+        },
+        "legend": "健身房"
+    }, {
+        "data": 30,
+        "style": {
+            "fill": "#d05",
+            "stroke": "#fff",
+            "r": 2
+        },
+        "legend": "思考"
+    }, {
+        "data": 11,
+        "style": {
+            "fill": "#a45",
+            "stroke": "#fff",
+            "r": 2
+        },
+        "legend": "数据库"
+    }],
+    "yAxis": [10, 30, 50, 60, 90, 200],
+    "centerRadio": 0.5,
+    "animation": {
+        "duration": 1000,
+        "type": "bounce",
+        "inOut": 500,
+        "open": true
+    },
+    "legend": {
+        "x": 30,
+        "y": 30
+    },
+    "outerWrapper": {
+        "show": true,
+        "r": 105,
+        "style": {
+            "stroke": "#eee",
+            "fill": "#fff"
+        }
+    },
+    "innerWrapper": {
+        "show": true,
+        "r": 40,
+        "style": {
+            "stroke": "#eee",
+            "fill": "#fff"
+        }
+    }
+}

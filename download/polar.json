@@ -1,0 +1,72 @@
+{
+    "title": {
+        "text": "南丁格尔玫瑰图",
+        "subText": "测试用例",
+        "padding": [-30, -35],
+        "style": {
+            "text": {
+                "font-size": 16,
+                "fill": "#ab0",
+                "text-anchor": "start"
+            },
+            "subText": {
+                "fill": "#999",
+                "text-anchor": "start"
+            }
+        }
+    },
+    "xAxis": ["2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010"],
+    "series": [{
+        "data": [10, 40],
+        "style": {
+            "fill": "#1ba9ba",
+            "stroke": "#fff",
+            "r": 2
+        },
+        "legend": "测试案例"
+    }, {
+        "data": [40, 20],
+        "style": {
+            "fill": "#f00",
+            "stroke": "#fff",
+            "r": 2
+        },
+        "legend": "二维码"
+    }, {
+        "data": [7, 30],
+        "style": {
+            "fill": "#f45",
+            "stroke": "#fff",
+            "r": 2
+        },
+        "legend": "健身房"
+    }],
+    "yAxis": [10, 30, 50, 60, 90, 200],
+    "centerRadio": 0.5,
+    "animation": {
+        "duration": 1000,
+        "type": "bounce",
+        "inOut": 500,
+        "open": true
+    },
+    "legend": {
+        "x": 30,
+        "y": 30
+    },
+    "outerWrapper": {
+        "show": true,
+        "r": 105,
+        "style": {
+            "stroke": "#eee"
+        }
+    },
+    "innerWrapper": {
+        "show": true,
+        "r": 10,
+        "style": {
+            "stroke": "#eee",
+            "fill": "#fff"
+        }
+    }
+
+}
